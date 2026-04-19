@@ -1,4 +1,3 @@
-from logging import log
 import os
 import shutil
 import sys
