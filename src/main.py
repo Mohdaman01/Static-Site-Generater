@@ -1,3 +1,4 @@
+from logging import log
 import os
 import shutil
 import sys
@@ -16,7 +17,7 @@ def main():
     basePath = args[0]
     if basePath is None:
         basePath = "/"
-
+    print(f"Base path: {basePath}")
     print("Deleting public directory...")
     if os.path.exists(dir_path_public):
         shutil.rmtree(dir_path_public)
